@@ -83,11 +83,6 @@ PRODUCT_COPY_FILES += \
     device/motorola/tegra2-common/usr/keylayout/stingray-keypad.kl:system/usr/keylayout/stingray-keypad.kl \
     device/motorola/tegra2-common/usr/keylayout/stingray-keypad.kcm:system/usr/keychars/stingray-keypad.kcm
 
-# GPS
-PRODUCT_COPY_FILES += \
-    device/motorola/tegra2-common/configs/gps.conf:/system/etc/gps.conf \
-    device/motorola/tegra2-common/configs/gpsconfig.xml:/system/etc/gpsconfig.xml
-
 PRODUCT_PACKAGES += \
     camera.stingray \
     sensors.stingray \
