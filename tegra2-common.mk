@@ -70,11 +70,6 @@ PRODUCT_COPY_FILES += \
     device/motorola/tegra2-common/libaudio/audio_policy.conf:system/etc/audio_policy.conf \
     device/motorola/tegra2-common/configs/audio_effects.conf:system/vendor/etc/audio_effects.conf
 
-# Wifi
-PRODUCT_COPY_FILES += \
-    device/motorola/tegra2-common/configs/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
-    device/motorola/tegra2-common/configs/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf
-
 # Keylayouts
 PRODUCT_COPY_FILES += \
     device/motorola/tegra2-common/usr/idc/qtouch-touchscreen.idc:system/usr/idc/qtouch-touchscreen.idc \
@@ -100,6 +95,11 @@ PRODUCT_PACKAGES += \
     bttest \
     whisperd \
     e2fsck
+
+# Wifi
+PRODUCT_PACKAGES += \
+    wpa_supplicant_overlay.conf \
+    p2p_supplicant_overlay.conf
 
 PRODUCT_PACKAGES += \
     tctl \

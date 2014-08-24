@@ -15,6 +15,7 @@
 USE_PROPRIETARY_AUDIO_EXTENSIONS := false
 
 # Platform
+BOARD_VENDOR := motorola
 TARGET_BOARD_PLATFORM := tegra
 TARGET_TEGRA_VERSION := ap20
 TARGET_BOARD_PLATFORM_GPU := tegra
@@ -133,7 +134,7 @@ SENSORS_NEED_SETRATE_ON_ENABLE := true
 # BOARD_LIB_DUMPSTATE := libdumpstate.wingray
 TARGET_RELEASETOOLS_EXTENSIONS := device/motorola/tegra2-common
 
--include vendor/moto/stingray/BoardConfigVendor.mk
+-include vendor/motolora/stingray/BoardConfigVendor.mk
 
 # CM Boot animation
 TARGET_SCREEN_HEIGHT := 800
